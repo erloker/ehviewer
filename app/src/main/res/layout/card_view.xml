@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.hippo.ehviewer.widget.TileThumb
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:layout_gravity="top|right" />
+
+            <TextView
+                android:id="@+id/simple_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
