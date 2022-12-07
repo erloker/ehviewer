@@ -40,8 +40,26 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/thumb"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="8dp" />
+            android:layout_marginTop="4dp" />
+
+        <com.hippo.ehviewer.widget.SimpleRatingView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/pages"
+            style="@style/CardMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
     <TextView

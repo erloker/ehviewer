@@ -301,6 +301,14 @@ abstract class GalleryAdapter extends RecyclerView.Adapter<GalleryHolder> {
                 ((TileThumb) holder.thumb).setThumbSize(gi.thumbWidth, gi.thumbHeight);
                 holder.thumb.load(EhCacheKeyFactory.getThumbKey(gi.gid), gi.thumb);
                 holder.title.setText(EhUtils.getSuitableTitle(gi));
+                holder.rating.setRating(gi.rating);
+                if (gi.pages == 0 || !Settings.getShowGalleryPages()) {
+                    holder.pages.setText(null);
+                    holder.pages.setVisibility(View.GONE);
+                } else {
+                    holder.pages.setText(Integer.toString(gi.pages) + "P");
+                    holder.pages.setVisibility(View.VISIBLE);
+                }
                 View category = holder.category;
                 Drawable drawable = category.getBackground();
                 int color = EhUtils.getCategoryColor(gi.category);
