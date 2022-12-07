@@ -505,6 +505,7 @@
     <string name="settings_eh_detail_size_long">Long</string>
     <string name="settings_eh_detail_size_short">Short</string>
     <string name="settings_eh_thumb_size">Thumb size</string>
+    <string name="settings_eh_thumb_size_super_large">Super large</string>
     <string name="settings_eh_thumb_size_large">Large</string>
     <string name="settings_eh_thumb_size_middle">Middle</string>
     <string name="settings_eh_thumb_size_small">Small</string>

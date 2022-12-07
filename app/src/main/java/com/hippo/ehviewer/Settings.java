@@ -337,6 +337,8 @@ public class Settings {
                 return R.dimen.gallery_grid_column_width_middle;
             case 2:
                 return R.dimen.gallery_grid_column_width_small;
+            case 3:
+                return R.dimen.gallery_grid_column_width_super_large;
         }
     }
 

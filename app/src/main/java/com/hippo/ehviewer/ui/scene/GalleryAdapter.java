@@ -57,6 +57,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import static com.hippo.ehviewer.spider.SpiderQueen.SPIDER_INFO_FILENAME;
+import static android.util.TypedValue.COMPLEX_UNIT_PX;
 
 abstract class GalleryAdapter extends RecyclerView.Adapter<GalleryHolder> {
 
@@ -184,6 +185,15 @@ abstract class GalleryAdapter extends RecyclerView.Adapter<GalleryHolder> {
             lp.width = mListThumbWidth;
             lp.height = mListThumbHeight;
             holder.thumb.setLayoutParams(lp);
+        } else if (viewType == TYPE_GRID) {
+            int columnWidth = mResources.getDimensionPixelOffset(Settings.getThumbSizeResId());
+            ViewGroup.LayoutParams lp = holder.category.getLayoutParams();
+            lp.width = columnWidth / 5;
+            lp.height = (int) (lp.width * 0.75);
+            holder.category.setLayoutParams(lp);
+            holder.simpleLanguage.setTextSize(COMPLEX_UNIT_PX, columnWidth / 15);
+            holder.title.setTextSize(COMPLEX_UNIT_PX, columnWidth / 16);
+            holder.title.setMaxLines(3);
         }
 
         return holder;
@@ -290,6 +300,7 @@ abstract class GalleryAdapter extends RecyclerView.Adapter<GalleryHolder> {
             case TYPE_GRID: {
                 ((TileThumb) holder.thumb).setThumbSize(gi.thumbWidth, gi.thumbHeight);
                 holder.thumb.load(EhCacheKeyFactory.getThumbKey(gi.gid), gi.thumb);
+                holder.title.setText(EhUtils.getSuitableTitle(gi));
                 View category = holder.category;
                 Drawable drawable = category.getBackground();
                 int color = EhUtils.getCategoryColor(gi.category);
