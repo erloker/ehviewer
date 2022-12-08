@@ -1,8 +1,10 @@
-# EhViewer Mod version by Epix
+# EhViewer 自用版本 基于Epix版修改而来
+
+主要优化了缩略图列表下的展示内容与效果，感觉会更适合平板等大屏设备
 
 Download/下载地址
 
-https://github.com/exzhawk/EhViewer/releases
+https://github.com/erloker/ehviewer/releases
 
 
 WARN: The apk file signature is NOT same as official version(by seven332). You may have to uninstall official version to install this one. Export your data in official version, uninstall and install this one, import your data in this version. You can use Titanium Backup or other common method to keep data.
@@ -23,18 +25,6 @@ Modifications:
 * Built-in hosts is discontinued.
 * Auto open next gallery after last page. Currently only work in Download.
 
-修改内容:
-
-* 在下载界面内, 右上角菜单增加若干按钮, 分别是: 全选, 进入选择模式, 选择已选择条目及以下所有条目, 选择已读条目 (阅读进度至少 2 页), 倒序开始下载全部, 选择已下载条目.
-* 在画廊列表界面内, 每个条目上增加一个按钮, 点击可以直接添加到下载, 而无需打开详情再下载. 如果条目已经在下载列表内, 或者已经阅读过, 则按钮隐藏.
-* 在下载/画廊列表界面, 显示 阅读进度/总页数, 并且使用渐变颜色指示进度, 完全没读过为红色, 读完为绿色.
-* 阅读时, 滑动阅读进度条, 不需要松手就直接显示进度条指示的页面.
-* 如果出现 509 或者 IP ban, 停止所有下载.
-* 添加新的三方 tag 翻译源.
-* 允许在每张图片下载直接延迟一会儿, 以防止网速过快导致被 IP ban.
-* 修正无法识别 torrent 的问题. ref: https://t.me/ehviewer/1090404
-* 内置 Hosts 不会维护, 默认不会启用.
-* 于最后一页之后自动打开下一画廊. 目前只在下载内可用.
 
 original README by seven332
 
