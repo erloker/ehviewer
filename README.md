@@ -2,6 +2,8 @@
 
 主要优化了缩略图列表下的展示内容与效果，感觉会更适合平板等大屏设备
 
+![screenshot-01](art/Screenshot_02.jpg)
+
 Download/下载地址
 
 https://github.com/erloker/ehviewer/releases
