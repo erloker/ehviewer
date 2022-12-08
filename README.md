@@ -2,11 +2,15 @@
 
 主要优化了缩略图列表下的展示内容与效果，感觉会更适合平板等大屏设备
 
-![screenshot-01](art/Screenshot_02.jpg)
 
 Download/下载地址
 
 https://github.com/erloker/ehviewer/releases
+
+预览
+
+![screenshot-01](art/Screenshot_02.jpg)
+
 
 
 WARN: The apk file signature is NOT same as official version(by seven332). You may have to uninstall official version to install this one. Export your data in official version, uninstall and install this one, import your data in this version. You can use Titanium Backup or other common method to keep data.
